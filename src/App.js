@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet';
@@ -10,13 +10,14 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 class App extends Component {
-  render(){
-  
-      return (
-        <div className="App">
-            {/* <Greet name="halil" heroName="Batman">
+  render() {
+
+    return (
+      <div className="App">
+        {/* <Greet name="halil" heroName="Batman">
             <p>This is children props</p>
             </Greet>
 
@@ -34,13 +35,14 @@ class App extends Component {
             <WelcomeMessage/>
              <FunctionClick/>
             <ClassClick/>
+            <EventBind />
 
              */}
-           
-            <EventBind/>
-        
-        </div>
-      );
+
+        <ParentComponent/>
+
+      </div>
+    );
   }
 }
 
