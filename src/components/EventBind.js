@@ -9,7 +9,7 @@ class EventBind extends Component {
       }
      // this.clickHandler = this.clickHandler.bind(this)
     }
-
+//4 different ways to bind the event handler !!!!!!!!!!!!!!!!!!
     // clickHandler(){
     //     this.setState({
     //         message: 'Clicked to the button of event bind'
