@@ -13,6 +13,8 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
 
 class App extends Component {
   render() {
@@ -28,21 +30,20 @@ class App extends Component {
             </Greet>
             <Welcome name="halil" heroName="Batman"/>
             <Greet name="setur"  heroName="Koc"/>
-            <Counter/>
-            
-            <Welcome name="olcay" heroName="Superman"/>
-            <Welcome name="seturbt" heroName="Spiderman"/>
+            <Counter/>                    
             <Message name="halil" heroName="flyingSpur"/>
             <Hello/>
             <WelcomeMessage/>
-             <FunctionClick/>
+            <FunctionClick/>
             <ClassClick/>
-            <EventBind />
+            <EventBind/>
             <ParentComponent/>
             <UserGreeting/>
-
+            <NameList/>
              */}
-             <NameList/>
+             <StyleSheet primary={true}/>
+             <Inline/>
+            
 
         
         
