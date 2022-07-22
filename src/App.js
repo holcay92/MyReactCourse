@@ -12,6 +12,7 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 
 class App extends Component {
   render() {
@@ -38,11 +39,13 @@ class App extends Component {
             <ClassClick/>
             <EventBind />
             <ParentComponent/>
-            
+            <UserGreeting/>
+
              */}
+             <NameList/>
 
         
-        <UserGreeting/>
+        
 
       </div>
     );
