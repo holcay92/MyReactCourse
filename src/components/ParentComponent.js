@@ -12,8 +12,9 @@ class ParentComponent extends Component {
         this.greetParent = this.greetParent.bind(this)
     }
 
-    greetParent() {
-        alert(`Hello ${this.state.parentName} and Welcome to Setur!`)//back ticks and dollar sign are features of ES6
+    greetParent(childParameter) {
+        alert(`Hello ${this.state.parentName} and Welcome to Setur! with parameter: ${childParameter}`)//back ticks and dollar sign are features of ES6
+        //alert('Hello '+ this.state.parentName+' and Welcome to Setur!')
     }
 
     render() {
