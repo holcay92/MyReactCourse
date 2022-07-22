@@ -6,12 +6,13 @@ function Greet(){
 
 //es6 arrow function
 const Greet = props=>{
-    console.log(props)
+    //console.log(props)
+    const {name,heroName} = props
     return (
     <div>
         <h1>
-            Greetings from Setur!!! {props.name} a.k.a. {props.heroName}</h1>          
-            {props.children}
+            Greetings from Setur!!! ^^{name}^^ a.k.a. {heroName}</h1>          
+            
     </div> //If there is nothing no problem in props.children
     )
 }
