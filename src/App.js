@@ -9,6 +9,7 @@ import WelcomeMessage from './components/WelcomeMessage';
 import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
 
 class App extends Component {
   render(){
@@ -30,9 +31,13 @@ class App extends Component {
             <Welcome name="seturbt" heroName="Spiderman"/>
             <Message name="halil" heroName="flyingSpur"/>
             <Hello/>
-            <WelcomeMessage/> */}
-            <FunctionClick/>
+            <WelcomeMessage/>
+             <FunctionClick/>
             <ClassClick/>
+
+             */}
+           
+            <EventBind/>
         
         </div>
       );
