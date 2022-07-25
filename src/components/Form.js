@@ -29,26 +29,27 @@ class Form extends Component {
     }
     handleSubmit=(event =>{
         alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
-        event.preventDefault()
+        event.preventDefault()//after submiting the info page doesnt refresh thanks to this line and info doesnt get lost
     })
 
 
 
     render() {
+        const{username,comments,topic} = this.state
         return (
             <form onSubmit = {this.handleSubmit}>
                 <div>
                     <label>Username</label>
-                    <input type='text' value={this.state.username} onChange={this.handleUsernameChange} />
+                    <input type='text' value={username} onChange={this.handleUsernameChange} />
                 </div>
 
                 <div>
                     <label>Comment</label>
-                    <textarea value={this.state.comments} onChange={this.handleCommentsChange}> </textarea>
+                    <textarea value={comments} onChange={this.handleCommentsChange}> </textarea>
                 </div>
                 <div>
                     <label>Topic</label>
-                    <select value={this.state.topic} onChange={this.handleTopicChange}>
+                    <select value={topic} onChange={this.handleTopicChange}>
                         <option value="react">React</option>
                         <option value="angular">Angular</option>
                         <option value="vue">Vue</option>
